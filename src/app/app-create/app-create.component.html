@@ -1,0 +1,19 @@
+
+<div class="form">
+  <label>
+
+    <span>Nova Tarefa</span>
+    <input type="text" [(ngModel)]="data" (ngModelChange)="setInputIsEmpty()">
+  </label>
+
+  <div class="grid">
+    <app-button type="square-hollow" (click)="cancel()">
+      <app-icon size="1">check_small</app-icon> Cancelar
+    </app-button>
+
+    <app-button type="square" (click)="sendValue()" [disabled]="inputIsEmpty" >
+      <app-icon size="1">check_small</app-icon> Criar
+    </app-button>
+  </div>
+
+</div>

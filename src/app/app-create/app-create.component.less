@@ -1,0 +1,59 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+:host {
+  &:extend(.flex);
+  justify-content: center;
+  height: 100vh;
+  background:#07c7a4;
+
+  .form {
+    &:extend(.flex);
+    max-width: 450px;
+    padding: 2rem;
+    background:#fff;
+    border-radius: 5px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    width:100%;
+  }
+
+
+  label{
+    &:extend(.flex);
+    margin-bottom: 1rem;
+
+
+  }
+
+  span{
+    &:extend(.flex);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #0bc08a;
+    margin-bottom: 5px;
+
+  }
+
+  input{
+    &:extend(.flex);
+    height: 2.81rem;
+    padding: 0 1rem;
+    border: 1px #0bc08a solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #666;
+    outline-color:#07c7a4;
+
+  }
+
+}

@@ -1,0 +1,31 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+:host {
+  &:extend(.flex);
+}
+.header{
+  display: grid;
+  grid-template-columns: 1fr 4rem;
+  height: 5.29rem;
+  width: 100%;
+  border-bottom: 1px #0bc08a solid;
+
+
+  h2{
+    &:extend(.flex);
+    align-items: center;
+    font-size: 1.4rem;
+    width: 100%;
+    padding:2rem 0 1.5rem 1rem;
+    text-transform:uppercase ;
+    color: #0bc08a;
+    font-weight: bolder;
+  }
+
+}
+.content {
+  &:extend(.flex);
+}

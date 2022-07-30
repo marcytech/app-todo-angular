@@ -1,0 +1,37 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+:host,
+.wrapper,
+.list,
+.control {
+  &:extend(.flex);
+}
+.wrapper {
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0 1.5rem 0;
+    font-size: 1.4rem;
+    color: #0bc08a;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px #47c6af solid;
+  }
+}
+
+:host {
+  border-right: 1px #47c6af solid;
+}
+
+
+.control {
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  padding: 0 1rem;
+}

@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <ul>
+    <li *ngFor="let item of data" [attr.cols]="cols">
+      <a href="/">{{item.title}}</a>
+      <app-icon  *ngFor="let icon of item.icons">{{icon}}</app-icon>
+    </li>
+
+  </ul>
+
+</div>
